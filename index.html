@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+
+
+<head>
+	<title>People's Profile</title>
+  <meta charset="UTF-8">
+
+  <link href="index.css" rel="stylesheet">
+
+</head>
+
+
+
+<body>
+  <table id="producttable">
+  <thead>
+    <tr>
+      <td>UPC_Code</td>
+      <td>Product_Name</td>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- existing data could optionally be included here -->
+  </tbody>
+</table>
+
+<template id="productrow">
+  <tr>
+    <td class="record"></td>
+    <td></td>
+  </tr>
+</template>
+
+<br />
+
+
+<script type="text/javascript" src="cart.js"></script>
+<script type="text/javascript">
+  Cart.init();
+</script>
+
+<p>Cart: <span class='cart-items-count'>0</span> item<span class='cart-items-count-plural'>s</span></p>
+<table class='cart-table'>
+  <thead>
+    <tr>
+      <th>Image</th>
+      <th>Product</th>
+      <th>quantity</th>
+      <th></th>
+      <th>Price</th>
+    </tr>
+  </thead>
+  <tbody class='cart-line-items'>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td colspan='4'>Subtotal</td>
+      <td class='cart-subtotal'></td>
+    </tr>
+  </tfoot>
+</table>
+<p class='cart-is-empty'>Your cart is empty.</p>
+
+
+
+	<!-- SCIPTS -->
+
+  <script src="index.js"></script>
+	<script src="common-js/jquery-3.2.1.min.js"></script>
+	<script src="common-js/tether.min.js"></script>
+	<script src="common-js/bootstrap.js"></script>
+	<script src="common-js/isotope.pkgd.min.js"></script>
+	<script src="common-js/jquery.waypoints.min.js"></script>
+	<script src="common-js/progressbar.min.js"></script>
+	<script src="common-js/jquery.fluidbox.min.js"></script>
+	<script src="common-js/scripts.js"></script>
+
+</body>
+</html>
