@@ -11,7 +11,7 @@ if ('content' in document.createElement('template')) {
     td = clone.querySelectorAll("td");
     td[0].textContent = "1235646565";
     td[1].textContent = "Stuff";
-
+    
     tb.appendChild(clone);
 
     // Clone the new row and insert it into the table
